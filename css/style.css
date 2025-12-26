@@ -504,3 +504,58 @@
     width: 100% !important;
     height: 100% !important;
 }
+.hero-header {
+    background: #000;
+}
+
+.hero-slide {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.hero-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+}
+
+.text-gold {
+    color: #d4af37 !important; /* لون ذهبي */
+}
+
+.btn-warning {
+    background: #d4af37;
+    border: none;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background: #c19a2b;
+    color: #000;
+}
+
+.btn-outline-white {
+    border-color: #c19a2b;
+    color: #fff;
+}
+
+.btn-outline-white:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p.fs-4 {
+        font-size: 1rem;
+    }
+    .hero-content .display-5 {
+        font-size: 2.5rem;
+    }
+}

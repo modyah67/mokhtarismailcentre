@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght=500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -29,6 +29,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS for Image Zoom -->
+    <style>
+        .cursor-pointer {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .cursor-pointer:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
@@ -43,8 +54,8 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-light sticky-top p-0">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
-           <a href="index.html" class="navbar-brand bg-primary py-4 px-5 me-0">
-                <h1 class="mb-0 text-black">ℳℴ𝓀𝒽𝓉𝒶𝓇 ℐ𝓈𝓂𝒶𝒾𝓁 𝒞ℯ𝓃𝓉𝓇ℯ</h1>
+            <a href="index.html" class="navbar-brand bg-primary py-4 px-5 me-0">
+                <h1 class="mb-0 text-black">Mokhtar Ismail Centre</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -67,148 +78,225 @@
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-2 text-dark mb-3 animated slideInDown">Our Extensions</h1>
-            <p class="fs-4 text-dark mb-0">Premium 100% Natural Hair with Ring Layers Installation</p>
+            <p class="fs-4 text-dark mb-0">Premium 100% Natural Hair with Advanced Ring Layers Installation</p>
         </div>
     </div>
     <!-- Page Header End -->
 
-                <div class="row g-4 justify-content-center">
-                <!-- الكروت زي ما هي، بس غيّرت الـ col عشان يبقى responsive أحسن -->
-                <!-- 1. أسود - 100g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+    <!-- Extensions Section Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- 1. Natural Black 100g 70cm -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.1s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-black-100g-70cm.jpg" alt="Natural Black 100g 70cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-black-100g-70cm.jpg" 
+                             alt="Natural Black 100g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Black</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 100g</p>
                         <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">11,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود طبيعي 100% (100 جرام - 70 سم) بسعر 11,000 جنيه. ممكن تفاصيل أكتر؟" target="_blank">
+                        <h5 class="text-primary mb-4">11,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود طبيعي 100% (100 جرام - 70 سم) بسعر 11,000 جنيه. ممكن تفاصيل أكتر؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 2. بني - 100g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 2. Natural Brown 100g 70cm -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.2s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-brown-100g-70cm.jpg" alt="Natural Brown 100g 70cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-brown-100g-70cm.jpg" 
+                             alt="Natural Brown 100g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Brown</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 100g</p>
                         <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">12,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني طبيعي 100% (100 جرام - 70 سم) بسعر 12,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">12,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني طبيعي 100% (100 جرام - 70 سم) بسعر 12,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 3. أشقر - 100g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 3. Natural Blonde 100g 70cm -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.3s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-blonde-100g-70cm.jpg" alt="Natural Blonde 100g 70cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-blonde-100g-70cm.jpg" 
+                             alt="Natural Blonde 100g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Blonde</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 100g</p>
                         <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">13,500 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر طبيعي 100% (100 جرام - 70 سم) بسعر 13,500 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">13,500 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر طبيعي 100% (100 جرام - 70 سم) بسعر 13,500 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 4. أسود - 200g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 4. Natural Black - Thick -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.4s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-black-200g-70cm.jpg" alt="Natural Black Thick 200g 70cm">
-                        <h4 class="mb-3">Natural Black - Thick</h4>
-                        <p class="mb-2">100% Natural Human Hair</p>
-                        <p class="mb-2">Weight: 200g</p>
-                        <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">22,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود طبيعي 100% (200 جرام - 70 سم) بسعر 22,000 جنيه. ممكن تفاصيل؟" target="_blank">
-                            Inquire on WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 5. بني - 200g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.5s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-brown-200g-70cm.jpg" alt="Natural Brown Thick 200g 70cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-black-200g-70cm.jpg" 
+                             alt="Natural Black Thick 200g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Brown - Thick</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 200g</p>
                         <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">24,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني طبيعي 100% (200 جرام - 70 سم) بسعر 24,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">22,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود كثيف 100% (200 جرام - 70 سم) بسعر 22,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 6. أشقر - 200g - 70cm -->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.6s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-blonde-200g-70cm.jpg" alt="Natural Blonde Thick 200g 70cm">
+                <!-- 5. Natural Brown - Thick -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.5s">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-brown-200g-70cm.jpg" 
+                             alt="Natural Brown Thick 200g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Blonde - Thick</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 200g</p>
                         <p class="mb-2">Length: 70 cm</p>
-                        <h5 class="text-primary mb-3">27,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر طبيعي 100% (200 جرام - 70 سم) بسعر 27,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">24,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني كثيف 100% (200 جرام - 70 سم) بسعر 24,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 7. أسود - 200g - 100cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 6. Natural Blonde - Thick -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.6s">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-blonde-200g-70cm.jpg" 
+                             alt="Natural Blonde Thick 200g 70cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
+                        <h4 class="mb-3">Natural Black - Thick</h4>
+                        <p class="mb-2">100% Natural Human Hair</p>
+                        <p class="mb-2">Weight: 200g</p>
+                        <p class="mb-2">Length: 70 cm</p>
+                        <h5 class="text-primary mb-4">27,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر كثيف 100% (200 جرام - 70 سم) بسعر 27,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
+                            Inquire on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. Natural Black - Extra Long -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.7s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-black-200g-100cm.jpg" alt="Natural Black Extra Long 200g 100cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-black-200g-100cm.jpg" 
+                             alt="Natural Black Extra Long 200g 100cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Black - Extra Long</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 200g</p>
                         <p class="mb-2">Length: 100 cm</p>
-                        <h5 class="text-primary mb-3">37,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود طبيعي 100% (200 جرام - 100 سم) بسعر 37,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">37,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أسود طويل جدًا 100% (200 جرام - 100 سم) بسعر 37,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 8. بني - 200g - 100cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 8. Natural Brown - Extra Long -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.8s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-brown-200g-100cm.jpg" alt="Natural Brown Extra Long 200g 100cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-brown-200g-100cm.jpg" 
+                             alt="Natural Brown Extra Long 200g 100cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Brown - Extra Long</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 200g</p>
                         <p class="mb-2">Length: 100 cm</p>
-                        <h5 class="text-primary mb-3">39,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني طبيعي 100% (200 جرام - 100 سم) بسعر 39,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">39,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن بني طويل جدًا 100% (200 جرام - 100 سم) بسعر 39,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- 9. أشقر - 200g - 100cm -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <!-- 9. Natural Blonde - Extra Long -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 bg-white rounded shadow-sm text-center wow fadeIn" data-wow-delay="0.9s">
-                        <img class="img-fluid mb-3 rounded" src="img/ext-blonde-200g-100cm.jpg" alt="Natural Blonde Extra Long 200g 100cm">
+                        <img class="img-fluid mb-3 rounded cursor-pointer" 
+                             src="img/ext-blonde-200g-100cm.jpg" 
+                             alt="Natural Blonde Extra Long 200g 100cm"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal" 
+                             onclick="document.getElementById('modalImage').src = this.src">
                         <h4 class="mb-3">Natural Blonde - Extra Long</h4>
                         <p class="mb-2">100% Natural Human Hair</p>
                         <p class="mb-2">Weight: 200g</p>
                         <p class="mb-2">Length: 100 cm</p>
-                        <h5 class="text-primary mb-3">42,000 EGP</h5>
-                        <a class="btn btn-primary text-uppercase px-4" href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر طبيعي 100% (200 جرام - 100 سم) بسعر 42,000 جنيه. ممكن تفاصيل؟" target="_blank">
+                        <h5 class="text-primary mb-4">42,000 EGP</h5>
+                        <a class="btn btn-primary text-uppercase d-block mx-auto px-4 py-2 small fw-bold rounded-pill" 
+                           style="width: fit-content; font-size: 0.85rem; white-space: nowrap;" 
+                           href="https://wa.me/201202000071?text=مرحبا، مهتمة بإكستنشن أشقر طويل جدًا 100% (200 جرام - 100 سم) بسعر 42,000 جنيه. ممكن تفاصيل؟" 
+                           target="_blank">
                             Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Extensions Section End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -242,6 +330,20 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Lightbox Modal for Image Enlargement -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <img id="modalImage" class="img-fluid rounded shadow-lg" alt="Enlarged Hair Extension">
+                </div>
+                <div class="modal-footer border-0 justify-content-center bg-transparent">
+                    <button type="button" class="btn btn-secondary rounded-pill px-5 py-2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
